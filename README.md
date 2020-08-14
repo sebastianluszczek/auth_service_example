@@ -19,7 +19,7 @@
 
 ```bash
 # clone repo
-git remote add origin https://github.com/sebastianluszczek/auth_service_example.git
+git clone https://github.com/sebastianluszczek/auth_service_example.git
 
 # move directory
 cd auth_service_example
