@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  auth_service:
+    container_name: auth_service
+    build: .
+    ports:
+      - 5000:5000
+    depends_on:
+      - auth_db
+    volumes:
+      - ./:/app
+      - "/app/node_modules"
+  auth_db:
+    container_name: auth_db
+    image: mongo
